@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Refleksi Technopreneurship - Agung Prabowo</title>
+<style>
+@page {
+size: A4;
+margin: 18mm 15mm;
+background-color: #ffffff;
+@bottom-right {
+content: "Halaman " counter(page) " dari " counter(pages);
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 8pt;
+color: #718096;
+}
+@bottom-left {
+content: "Magister Teknologi Dirgantara - STTKD";
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 8pt;
+color: #718096;
+}
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 10pt;
+line-height: 1.6;
+color: #2d3748;
+margin: 0;
+padding: 0;
+}
+
+/* Header Banner */
+.header-container {
+background-color: #1a365d;
+color: #ffffff;
+padding: 24px;
+border-radius: 6px;
+margin-bottom: 25px;
+}
+
+.header-title {
+font-size: 18pt;
+font-weight: bold;
+margin: 0 0 6px 0;
+letter-spacing: -0.5px;
+color: #ffffff;
+text-transform: uppercase;
+}
+
+.header-subtitle {
+font-size: 11pt;
+color: #e2e8f0;
+margin: 0 0 16px 0;
+font-weight: 300;
+border-bottom: 1px solid #4a5568;
+padding-bottom: 12px;
+}
+
+.meta-grid {
+display: table;
+width: 100%;
+font-size: 9pt;
+color: #cbd5e0;
+}
+
+.meta-row {
+display: table-row;
+}
+
+.meta-cell {
+display: table-cell;
+padding: 2px 0;
+}
+
+.meta-cell strong {
+color: #ffffff;
+}
+
+/* Section Styling */
+h2 {
+font-size: 13pt;
+color: #1a365d;
+border-left: 4px solid #3182ce;
+padding-left: 10px;
+margin-top: 22px;
+margin-bottom: 12px;
+page-break-after: avoid;
+}
+
+h3 {
+font-size: 11pt;
+color: #2b6cb0;
+margin-top: 14px;
+margin-bottom: 6px;
+page-break-after: avoid;
+}
+
+p {
+margin-top: 0;
+margin-bottom: 10px;
+text-align: justify;
+}
+
+ul, ol {
+margin-top: 0;
+margin-bottom: 10px;
+padding-left: 20px;
+}
+
+li {
+margin-bottom: 4px;
+text-align: justify;
+}
+
+/* Tables */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+margin-bottom: 16px;
+font-size: 9pt;
+page-break-inside: avoid;
+}
+
+th {
+background-color: #2b6cb0;
+color: #ffffff;
+font-weight: bold;
+text-align: left;
+padding: 8px 10px;
+border: 1px solid #2b6cb0;
+}
+
+td {
+padding: 7px 10px;
+border: 1px solid #e2e8f0;
+vertical-align: top;
+}
+
+tr:nth-child(even) td {
+background-color: #f7fafc;
+}
+
+/* Callout / Highlight box */
+.callout {
+background-color: #ebf8ff;
+border-left: 4px solid #3182ce;
+padding: 12px 15px;
+margin: 14px 0;
+border-radius: 0 4px 4px 0;
+}
+
+.callout-title {
+font-weight: bold;
+color: #2b6cb0;
+margin-bottom: 4px;
+}
+
+.badge {
+background-color: #c6f6d5;
+color: #22543d;
+padding: 2px 6px;
+border-radius: 4px;
+font-size: 8pt;
+font-weight: bold;
+}
+
+a {
+color: #3182ce;
+text-decoration: none;
+}
+
+.bibliography {
+font-size: 8.5pt;
+line-height: 1.5;
+}
+
+.bibliography p {
+padding-left: 20px;
+text-indent: -20px;
+margin-bottom: 6px;
+text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="header-container">
+<div class="header-title">Refleksi dari Materi Technopreneur</div>
+<div class="header-subtitle">Refleksi Pertemuan 1–7 dan Praktikum 1–7 Berbasis Diktat Kuliah dan Praktikum Technopreneurship</div>
+<div class="meta-grid">
+<div class="meta-row">
+<div class="meta-cell" style="width: 50%;"><strong>Disusun Oleh:</strong> Agung Prabowo, S.T. (NIM 25224189)</div>
+<div class="meta-cell" style="width: 50%;"><strong>Tugas:</strong> Individu | Semester Gasal 2026-2027</div>
+</div>
+<div class="meta-row">
+<div class="meta-cell"><strong>Dosen Pengampu:</strong> Dr. Edi Sofyan, B.Eng., M.Eng. (Aero)</div>
+<div class="meta-cell"><strong>Institusi:</strong> Magister Teknologi Dirgantara, STTKD Yogyakarta</div>
+</div>
+</div>
+</div>
+
+<h2>1. Ruang Lingkup dan Alur Logika</h2>
+
+<h3>1.1 Ruang Lingkup</h3>
+<p>Dokumen ini memuat refleksi atas tujuh materi mata kuliah Technopreneurship (Pertemuan 1–7) dan satu refleksi keseluruhan, sebagaimana diminta pada tugas “Refleksi dari Materi Technopreneur” di portal STTKD. Refleksi dilengkapi dengan bukti pengalaman praktikum 1 sampai 7, termasuk tautan karya pada Lampiran A.</p>
+
+<h3>1.2 Dasar dan Batasan</h3>
+<ol>
+<li><strong>Sumber materi:</strong> Diktat kuliah Pertemuan 1–7 (Sofyan, n.d.). Tautan video acuan pada diktat menjadi bahan belajar pendamping dan isinya tidak dikutip secara spesifik.</li>
+<li><strong>Kerangka refleksi:</strong> Siklus belajar berbasis pengalaman Kolb (1984): pengalaman konkret, observasi reflektif, konseptualisasi abstrak, dan eksperimen aktif.</li>
+<li><strong>Struktur paragraf:</strong> Setiap paragraf memuat konsep inti, kaitannya dengan praktikum atau pengalaman profesional penulis di bidang perawatan pesawat, dan catatan kritis.</li>
+<li><strong>Data praktikum:</strong> Fakta dan angka diambil dari laporan praktikum penulis. Seluruh angka bisnis PW CORE V1 merupakan asumsi dan data uji.</li>
+<li><strong>Urutan materi:</strong> Mengikuti urutan Pertemuan 1–7 pada diktat.</li>
+</ol>
+
+<h3>1.3 Alur Logika dan Peta Keterlacakan</h3>
+<p>Alur penyusunan mengikuti pola: Materi (konsep diktat) → Observasi reflektif → Bukti praktikum atau pengalaman profesional → Catatan kritis → Refleksi keseluruhan. Tabel berikut memetakan setiap materi terhadap bukti dan bagian refleksinya.</p>
+
+<table>
+<thead>
+<tr>
+<th style="width: 15%;">Materi</th>
+<th style="width: 35%;">Konsep Inti (Diktat)</th>
+<th style="width: 35%;">Bukti Praktikum / Pengalaman</th>
+<th style="width: 15%;">Bagian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1 Concept</strong></td>
+<td>Opportunity–organization–value; technopreneur</td>
+<td>Praktikum 1 (website Canva)</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td><strong>P2 Character</strong></td>
+<td>Persepsi → kebiasaan → karakter; Be-Do-Have; SCAMPER</td>
+<td>Pengalaman profesional perawatan pesawat</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td><strong>P3 Leadership</strong></td>
+<td>Pilihan dan pengaruh; kepemimpinan diri; jeda stimulus–respons</td>
+<td>Pengalaman profesional perawatan pesawat</td>
+<td>3.3</td>
+</tr>
+<tr>
+<td><strong>P4 Communication</strong></td>
+<td>Berbagi pemahaman; mendengarkan; emosi menggerakkan perilaku</td>
+<td>Praktikum 6 (proposal dan surat penawaran)</td>
+<td>3.4</td>
+</tr>
+<tr>
+<td><strong>P5 Financial Literacy</strong></td>
+<td>Aset vs liabilitas; investasi pada diri</td>
+<td>Praktikum 2 (Ajaib, GOTO, SPCX)</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td><strong>P6 Innovation</strong></td>
+<td>SCAMPER; lateral thinking; Six Thinking Hats</td>
+<td>Praktikum 4, 5, dan 7</td>
+<td>3.6</td>
+</tr>
+<tr>
+<td><strong>P7 Business Model</strong></td>
+<td>Business Model Canvas; Value Proposition Canvas; 3 alasan gagal</td>
+<td>Praktikum 6 dan 7</td>
+<td>3.7</td>
+</tr>
+</tbody>
+</table>
+
+<h2>2. Pemenuhan Ketentuan Tugas</h2>
+<table>
+<thead>
+<tr>
+<th style="width: 10%;">ID</th>
+<th style="width: 50%;">Ketentuan Tugas</th>
+<th style="width: 25%;">Bukti pada Dokumen</th>
+<th style="width: 15%;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R-01</strong></td>
+<td>Membuat refleksi sederhana untuk setiap materi Technopreneur</td>
+<td>Bagian 3.1–3.7</td>
+<td><span class="badge">Terpenuhi</span></td>
+</tr>
+<tr>
+<td><strong>R-02</strong></td>
+<td>Minimal 1 paragraf refleksi untuk setiap materi (7 paragraf)</td>
+<td>Bagian 3 (tujuh paragraf)</td>
+<td><span class="badge">Terpenuhi</span></td>
+</tr>
+<tr>
+<td><strong>R-03</strong></td>
+<td>1 paragraf refleksi untuk keseluruhan materi kuliah</td>
+<td>Bagian 4</td>
+<td><span class="badge">Terpenuhi</span></td>
+</tr>
+<tr>
+<td><strong>R-04</strong></td>
+<td>Pelengkap: bukti Praktikum 1 (Canva) dan Praktikum 7 (Google Opal)</td>
+<td>Bagian 5; Lampiran A</td>
+<td><span class="badge">Terpenuhi</span></td>
+</tr>
+</tbody>
+</table>
+
+<h2>3. Refleksi per Materi</h2>
+
+<h3>3.1 Pertemuan 1 – Concept</h3>
+<p>Materi <em>Concept</em> mendefinisikan wirausahawan sebagai orang yang melihat peluang, membentuk organisasi untuk memanfaatkannya, dan dengan demikian menciptakan nilai tambah (<em>opportunity–organization–value</em>), sedangkan <em>technopreneur</em> adalah wirausahawan berbasis teknologi (Sofyan, n.d.). Definisi ini menggeser pemahaman saya dari wirausaha sebagai aktivitas berjualan menjadi proses yang menghubungkan peluang, organisasi, dan nilai. Diktat juga mengutip kebutuhan sekitar 2% wirausahawan bagi kemajuan suatu negara, sementara proporsi di Indonesia dinyatakan masih di bawah 1%; angka ini saya baca sebagai konteks motivasional dan bukan temuan yang saya verifikasi. Langkah konkret pertama saya adalah Praktikum 1, yaitu website pribadi di Canva yang memuat profil diri dan gagasan bisnis sebagai etalase digital. Sebagai praktisi perawatan pesawat, saya menyadari bahwa kompetensi teknis perlu dipadukan dengan kemampuan melihat peluang dan membangun nilai, dan kesadaran ini menjadi dasar gagasan PW CORE V1 pada Praktikum 6.</p>
+
+<h3>3.2 Pertemuan 2 – Character</h3>
+<p>Materi <em>Character</em> menegaskan rantai persepsi, kebiasaan, dan karakter, dengan pandangan bahwa karakter adalah unsur terpenting keberhasilan wirausaha di samping mimpi yang jelas melalui paradigma <em>Be-Do-Have</em> (Sofyan, n.d.). Gagasan ini sejalan dengan Covey (1989) yang memandang kebiasaan sebagai pembentuk karakter. Perubahan cara pandang dari <em>problem solving</em> menjadi <em>solution finding</em>, serta teknik SCAMPER (Eberle, 1996), menjadi alat konkret untuk mengubah persepsi. Dalam pekerjaan saya, kerusakan komponen yang berulang dapat dipandang sebagai beban, atau sebagai peluang membangun pemantauan kondisi yang lebih baik. Secara kritis, saya memandang karakter sebagai syarat penting tetapi bukan satu-satunya penentu, karena diktat sendiri menempatkan peluang, kepemimpinan, model bisnis, dan pengelolaan sumber daya sebagai unsur wirausaha yang berhasil.</p>
+
+<h3>3.3 Pertemuan 3 – Leadership</h3>
+<p>Materi <em>Leadership</em> memaknai kepemimpinan sebagai pilihan dan pengaruh, serta sebagai tindakan dan bukan jabatan. Kepemimpinan diri yang terdiri atas <em>self-understanding</em>, <em>self-awareness</em>, dan <em>self-control</em> dinyatakan sebagai prasyarat memimpin orang lain, termasuk kesadaran bahwa ada jeda antara stimulus dan respons (Sofyan, n.d.). Konsep ini dekat dengan kecerdasan emosional (Goleman, 1995) dan sangat relevan di dunia penerbangan yang menuntut ketenangan, keselamatan, dan akuntabilitas. Diktat juga membedakan pemimpin yang berfokus pada manusia dan visi dengan manajer yang berfokus pada sistem. Menurut saya, pada organisasi dengan regulasi ketat seperti perawatan pesawat, keduanya tetap diperlukan; diktat pun menyebut kepemimpinan dan manajemen sebagai hal yang saling melengkapi.</p>
+
+<h3>3.4 Pertemuan 4 – Communication & Motivation</h3>
+<p>Materi <em>Communication & Motivation</em> memaknai komunikasi sebagai berbagi pemahaman, dengan kunci mendengarkan untuk mengerti dan mengonfirmasi ulang apa yang dipahami (Sofyan, n.d.), yang sejalan dengan prinsip memahami terlebih dahulu sebelum dipahami (Covey, 1989). Dalam pekerjaan perawatan, serah terima pekerjaan yang tidak jelas dapat berdampak pada keselamatan, sehingga konfirmasi ulang bukan sekadar etika berkomunikasi. Praktik komunikasi bisnis tampak pada Praktikum 6, ketika proposal dan surat penawaran kerja sama disusun agar nilai produk dapat dipahami calon mitra. Pada bagian motivasi, diktat menegaskan bahwa pengetahuan tidak mengubah perilaku, melainkan emosi, dan bahwa banyak penolakan sebenarnya berasal dari kurangnya kejelasan; gagasan ini sejalan dengan Heath dan Heath (2010). Saya juga mencatat bahwa untuk memotivasi orang lain, saya perlu memulainya dari diri sendiri.</p>
+
+<h3>3.5 Pertemuan 5 – Financial Literacy</h3>
+<p>Materi <em>Financial Literacy</em> menekankan bahwa literasi keuangan jarang diajarkan di sekolah, dengan pembedaan aset yang memasukkan uang ke kantong dan liabilitas yang mengeluarkannya, serta pentingnya berinvestasi pada pendidikan diri (Sofyan, n.d.; Kiyosaki, 1998). Praktikum 2 memberi pengalaman langsung: saya membeli saham GOTO senilai Rp6.000 dan saham SPCX bernilai sekitar US$2 sebagai biaya belajar, serta mencatat bahwa IHSG turun sekitar 26% dalam setahun dan TLKM turun 14,86% dalam sehari. Data ini menunjukkan bahwa risiko harga tidak hilang hanya karena aset berada di pasar yang teregulasi. Dengan profil risiko konservatif, saya memilih menempatkan saham berkapitalisasi besar sebagai inti dan memperlakukan aset spekulatif sebagai porsi kecil. Kerangka Kiyosaki bersifat populer dan sebagian klaimnya perlu diuji dengan literatur keuangan akademik, sehingga saya menggunakannya sebagai pemantik literasi dan bukan satu-satunya pedoman.</p>
+
+<h3>3.6 Pertemuan 6 – Thinking, Creativity & Innovation</h3>
+<p>Materi <em>Thinking, Creativity & Innovation</em> memandang kreativitas sebagai keterampilan yang dapat dilatih dengan alat berpikir, seperti SCAMPER (Eberle, 1996), <em>lateral thinking</em> (De Bono, 1970), dan <em>Six Thinking Hats</em> (De Bono, 1985). Hambatan yang disebutkan antara lain takut salah, terlalu bergantung pada logika, dan pengaruh sistem pendidikan (Sofyan, n.d.). Pada proposal Praktikum 6, saya menerapkan unsur <em>combine</em> dengan memadukan data log penerbangan dan analitik tren mesin. Gagasan itu kemudian diwujudkan pada Praktikum 7 dalam dua prototipe Google Opal, yaitu alat analisis kelayakan bisnis dan CessnaGuard, sedangkan Praktikum 4 menunjukkan bahwa aplikasi <em>Daily Notebook</em> dapat dibuat di AppSheet dalam satu hari tanpa pemrograman. Pengalaman ini mengajarkan bahwa alat berpikir kreatif dan alat <em>no-code</em> mempercepat gagasan menjadi prototipe, tetapi keluarannya tetap harus diuji.</p>
+
+<h3>3.7 Pertemuan 7 – Business Model & Proposal</h3>
+<p>Materi <em>Business Model & Proposal</em> menyebut tiga alasan <em>technopreneur</em> gagal: lupa merumuskan model bisnis, terlalu berfokus pada teknologi dan melupakan pengalaman pelanggan, serta menyerah terlalu cepat (Sofyan, n.d.). <em>Business Model Canvas</em> (Osterwalder & Pigneur, 2010) dan <em>Value Proposition Canvas</em> (Osterwalder et al., 2014) menjadi alat untuk menjawabnya. Saya menerapkannya pada Praktikum 6 melalui proposal PW CORE V1 sebanyak 18 slide, dengan permintaan <em>seed</em> Rp750 juta untuk 15% ekuitas dan perkiraan <em>break-even</em> pada bulan ke-16. Asumsi tersebut saya jelajahi pada Praktikum 7 melalui aplikasi Opal Analisis Kelayakan Bisnis: dengan 50 pesawat, harga Rp3,5 juta per pesawat per bulan, dan biaya Rp105 juta per bulan, titik impas 30 pesawat selaras dengan proposal. Seluruh angka tetap berupa asumsi sehingga, sejalan dengan <em>lean startup</em> (Ries, 2011; Blank, 2013), langkah berikutnya adalah wawancara operator dan <em>pilot project</em> untuk memvalidasi hipotesis.</p>
+
+<h2>4. Refleksi Keseluruhan Materi Technopreneur</h2>
+<div class="callout">
+<div class="callout-title">Sintesis Refleksi Akhir</div>
+<p style="margin-bottom:0;">Secara keseluruhan, tujuh materi membentuk alur dari dalam ke luar: persepsi dan karakter, kepemimpinan, komunikasi dan motivasi, literasi keuangan, kemampuan berpikir kreatif, hingga model bisnis dan proposal. Praktikum 1 sampai 7 berperan sebagai eksperimen aktif yang menguji konsep tersebut, dan hasilnya mengingatkan bahwa membuat prototipe relatif mudah, tetapi nilai bisnis baru terbukti bila ada pengguna yang mau memakai dan membayar; pada Praktikum 3, misalnya, dua NFT berhasil diterbitkan tetapi tidak ada pembelian selama periode praktikum. Pengalaman TokoMall yang tidak dapat dijangkau dan aplikasi Opal yang berhenti berjalan setelah 17 November 2026 menunjukkan bahwa ketergantungan pada satu platform adalah risiko nyata bagi technopreneur. Ke depan, saya ingin mengembangkan solusi berbasis data untuk perawatan pesawat, dimulai dengan memvalidasi kebutuhan operator secara jujur terhadap asumsi.</p>
+</div>
+
+<h2>5. Rekapitulasi Praktikum</h2>
+<table>
+<thead>
+<tr>
+<th style="width: 6%;">No.</th>
+<th style="width: 24%;">Praktikum</th>
+<th style="width: 50%;">Hasil Utama</th>
+<th style="width: 20%;">Bukti</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Website Canva</strong></td>
+<td>Website pribadi di Canva yang memuat profil diri dan gagasan bisnis.</td>
+<td>Tautan website (Lampiran A)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Blockchain & Pasar Modal</strong></td>
+<td>Akun PINTU, AJAIB, dan MetaMask; pembelian GOTO dan SPCX; perbandingan saham dan kripto.</td>
+<td>Laporan Praktikum 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>NFT Polygon</strong></td>
+<td>Koleksi “Agung Collection” (ERC-721, 2 item); NFT #1 dijual; NFT #2 ditransfer.</td>
+<td>Laporan Praktikum 3</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Aplikasi No-Code</strong></td>
+<td>Aplikasi Daily Notebook dengan tabel 8 kolom; tampilan deck dan peta di AppSheet.</td>
+<td>Laporan Praktikum 4</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>AI Digital Asset</strong></td>
+<td>Chatbot RAG pada XBOT365 (BengkelPintar); pengujian 9 pertanyaan.</td>
+<td>Laporan Praktikum 5</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Proposal PW CORE V1</strong></td>
+<td>Proposal 18 slide di Canva dengan BMC, VPC, proyeksi keuangan, dan penawaran seed Rp750 juta.</td>
+<td>Laporan Praktikum 6</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Automation Opal</strong></td>
+<td>Dua aplikasi: Analisis Kelayakan Bisnis dan CessnaGuard (pemantauan mesin PT6A-114A).</td>
+<td>Laporan Praktikum 7</td>
+</tr>
+</tbody>
+</table>
+
+<h2>6. Catatan Validitas dan Keterbatasan</h2>
+<ol>
+<li>Refleksi berbasis pengalaman satu semester. Diktat bersifat inspiratif dan normatif dengan sedikit bukti empiris, sehingga dilengkapi dengan literatur pendukung.</li>
+<li>Angka pasar, keuangan, titik impas, dan waktu balik modal PW CORE V1 merupakan asumsi dan data uji, belum divalidasi dengan data operator.</li>
+<li>Pada Praktikum 7, perhitungan dilakukan oleh model bahasa dan diverifikasi terhadap perhitungan manual. Aplikasi Opal memerlukan login akun Google dan tidak lagi berjalan setelah 17 November 2026.</li>
+<li>Ketergantungan pada platform (TokoMall pada Praktikum 3 dan Opal pada Praktikum 7) merupakan risiko yang berulang dan perlu diantisipasi dengan dokumentasi serta cadangan hasil kerja.</li>
+</ol>
+
+<h2>Daftar Pustaka</h2>
+<div class="bibliography">
+<p>Blank, S. (2013). Why the lean start-up changes everything. <em>Harvard Business Review</em>, 91(5), 63–72.</p>
+<p>Covey, S. R. (1989). <em>The 7 habits of highly effective people</em>. Free Press.</p>
+<p>De Bono, E. (1970). <em>Lateral thinking: Creativity step by step</em>. Harper & Row.</p>
+<p>De Bono, E. (1985). <em>Six thinking hats</em>. Little, Brown and Company.</p>
+<p>Eberle, B. (1996). <em>Scamper: Creative games and activities for imagination development</em>. Prufrock Press.</p>
+<p>Goleman, D. (1995). <em>Emotional intelligence</em>. Bantam Books.</p>
+<p>Heath, C., & Heath, D. (2010). <em>Switch: How to change things when change is hard</em>. Broadway Books.</p>
+<p>Kiyosaki, R. T. (1998). <em>Rich Dad’s Cashflow Quadrant</em>. Warner Books.</p>
+<p>Kolb, D. A. (1984). <em>Experiential learning: Experience as the source of learning and development</em>. Prentice Hall.</p>
+<p>Osterwalder, A., & Pigneur, Y. (2010). <em>Business model generation</em>. John Wiley & Sons.</p>
+<p>Osterwalder, A., Pigneur, Y., Bernarda, G., & Smith, A. (2014). <em>Value proposition design</em>. John Wiley & Sons.</p>
+<p>Ries, E. (2011). <em>The lean startup: How today’s entrepreneurs use continuous innovation to create radically successful businesses</em>. Crown Business.</p>
+<p>Sofyan, E. (n.d.). <em>Technopreneurship: Pertemuan 1–7</em> [Diktat kuliah]. Program Magister Teknologi Dirgantara, STTKD Yogyakarta.</p>
+</div>
+
+<h2>Lampiran A. Tautan Karya</h2>
+<table>
+<thead>
+<tr>
+<th style="width: 30%;">Karya</th>
+<th style="width: 20%;">Platform</th>
+<th style="width: 50%;">Tautan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Website pribadi (Praktikum 1)</strong></td>
+<td>Canva</td>
+<td><a href="https://agungprabowo.my.canva.site/agung-prabowo-technopreneur">agungprabowo.my.canva.site/agung-prabowo-technopreneur</a></td>
+</tr>
+<tr>
+<td><strong>Proposal bisnis PW CORE V1 (Praktikum 6)</strong></td>
+<td>Canva</td>
+<td><a href="https://canva.link/otjjruoqonejvkd">canva.link/otjjruoqonejvkd</a></td>
+</tr>
+<tr>
+<td><strong>Analisis Kelayakan Bisnis (Praktikum 7)</strong></td>
+<td>Google Opal</td>
+<td><a href="https://opal.google/app/1xYplkZkrOBX9SNWbnpcxLjamloA72x3y">opal.google/app/1xYplkZkrOBX9SNWbnpcxLjamloA72x3y</a></td>
+</tr>
+<tr>
+<td><strong>CessnaGuard EHM (Praktikum 7)</strong></td>
+<td>Google Opal</td>
+<td><a href="https://opal.google/app/1b7pISwG8WrhDN2VnGUw_V8ZXL0nNoS0N">opal.google/app/1b7pISwG8WrhDN2VnGUw_V8ZXL0nNoS0N</a></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
